@@ -1,0 +1,55 @@
+@tailwind utilities;
+
+@layer utilities {
+  .text-shadow-sm {
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+  }
+
+  .bg-gradient-to-r-primary {
+    background-image: linear-gradient(to right, #3b82f6, #1e40af);
+  }
+
+  .flex-center {
+    @apply flex items-center justify-center;
+  }
+
+  .bg-primary {
+    background-color: var(--color-primary);
+  }
+
+  .bg-secondary {
+    background-color: var(--color-secondary);
+  }
+
+  .text-primary {
+    color: var(--color-primary);
+  }
+
+  .text-secondary {
+    color: var(--color-secondary);
+  }
+
+  .border-primary {
+    border-color: var(--color-primary);
+  }
+
+  .text-foreground {
+    color: var(--color-foreground);
+  }
+
+  .bg-background {
+    background-color: var(--color-background);
+  }
+
+  .text-primary-dark {
+    color: var(--color-primary-dark);
+  }
+
+  .bg-primary-light {
+    background-color: var(--color-primary-light);
+  }
+
+  .dark\:bg-primary-light {
+    background-color: var(--color-primary-light);
+  }
+}

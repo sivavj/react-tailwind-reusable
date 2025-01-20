@@ -1,0 +1,34 @@
+@tailwind base;
+
+@layer base {
+  :root {
+    --color-primary: #3b82f6;
+    --color-primary-light: #93c5fd;
+    --color-primary-dark: #1e40af;
+    --color-secondary: #10b981;
+    --color-secondary-light: #34d399;
+    --color-secondary-dark: #047857;
+    --color-background: #ffffff;
+    --color-foreground: #1f2937;
+  }
+
+  [data-theme='dark'] {
+    --color-primary: #1e40af;
+    --color-primary-light: #93c5fd;
+    --color-primary-dark: #1e40af;
+    --color-secondary: #047857;
+    --color-secondary-light: #34d399;
+    --color-secondary-dark: #047857;
+    --color-background: #1f2937;
+    --color-foreground: #f3f4f6;
+  }
+
+  * {
+    @apply m-0 p-0 box-border;
+  }
+
+  body {
+    @apply text-foreground bg-background;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+}
